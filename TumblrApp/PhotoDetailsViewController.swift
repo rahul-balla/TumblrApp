@@ -9,11 +9,16 @@
 import UIKit
 
 class PhotoDetailsViewController: UIViewController {
-
+    
+    @IBOutlet weak var postImageView: UIImageView!
+    var image: UIImage!
+    var photos: [[String: Any]] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        postImageView.image = image
+//        self.postImageView.af_setImage(withURL: url)
+        // Do any additional setup adfter loading the view.
     }
 
     override func didReceiveMemoryWarning() {
